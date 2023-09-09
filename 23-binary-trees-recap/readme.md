@@ -5,6 +5,7 @@
 - nodes at the bottom of the tree are called leaf nodes
 - its advantage is speed. In a balanced tree, searching is O(H). Better than O(N)
 - using recursion makes it easy to implement
+```
   
    |
    |      /O(n)
@@ -14,6 +15,7 @@
    |  /
    |_/_________________________________
           data input
+```
 
 - bsts are useful when handling large amouts of data
 - balanced tree vs unbalanced tree
