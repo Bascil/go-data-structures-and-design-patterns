@@ -1,0 +1,11 @@
+# Linked List
+- data structure for storing a collection of items/elements
+- often compared to arrays.
+- data is stored on a sequence of nodes linked to each other
+- each node contains data and a pointer to the next node
+- the pointer indicates the address of the next node(where the next node is)
+- it is faster to traverse an array than a linked list
+- to traverse a linked list, you fist need to go to the linked list and follow along
+- adding a node at the beginign of the linked list takes constant time O(1)
+- adding something at the begining using arrays as abit more complicated. 
+- all the values will have to shift
