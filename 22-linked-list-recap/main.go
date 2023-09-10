@@ -13,21 +13,6 @@ type List struct {
 	tail *Node
 }
 
-// we need a pointer receiver
-func (l *List) Insert(data int){
-	newNode := &Node{data: data, prev: nil, next: nil}
-
-    if l.head == nil {
-        l.head = newNode
-        l.tail = newNode
-        return
-    }
-
-    newNode.next = l.head
-    l.head.prev = newNode
-    l.head = newNode
-}
-
 // get the first node
 func (l *List) First() *Node {
 	return l.head
@@ -41,6 +26,21 @@ func (l *List) Last() *Node {
 // get the next node
 func (n *Node) Next() *Node {
 	return n.next
+}
+
+// we need a pointer receiver
+func (l *List) Insert(data int){
+	newNode := &Node{data: data, prev: nil, next: nil}
+
+    if l.head == nil {
+        l.head = newNode
+        l.tail = newNode
+        return
+    }
+
+    newNode.next = l.head
+    l.head.prev = newNode
+    l.head = newNode
 }
 
 // Display prints the elements of the  linked list

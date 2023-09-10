@@ -1,9 +1,24 @@
 # binary tree
+- all the data structures discussed have been linear data structures
+- Binary tree are part of tree structures
 - a tree with at most two children
+- each part of the tree is called a node
+- each connection between nodes is called edge
 - top most node is the root node
 - nodes directly under the root are called children
+- nodes of the same parent are called sibling nodes
 - nodes at the bottom of the tree are called leaf nodes
-- its advantage is speed. In a balanced tree, searching is O(H). Better than O(N)
+- leaf nodes have no children
+- a subtree is part of a tree which in itself is a tree 52,19,76 form a subtree
+- 52 and 19 are ancestors to node 7
+- each node is greater than every node in its left subtree
+
+## advantages
+### speed
+- you can locate data in a large tree with very few comparisons
+- In a balanced tree, searching is O(H). Better than O(N)
+
+### recursion
 - using recursion makes it easy to implement
 ```
   
@@ -20,9 +35,9 @@
 - bsts are useful when handling large amouts of data
 - balanced tree vs unbalanced tree
 
-              O
+              O  root
             /    \ 
-            0     0
+            0     0 parent
           /   \
           0    0
 
@@ -48,7 +63,7 @@
 
 # insert a new node 56
 - start at the root 100, and compare 56 to root
-- if 56 < 100, go left (descend to 100's left subtree), 
+- if 56 <= 100, go left (descend to 100's left subtree), 
 - if 56 > 100, go right(descend to 100's right subtree)
 - descend down the tree and repeat same steps
 
@@ -56,3 +71,16 @@
 - start at the root node
 - compare 24 to 100
 - if smaller go to the left side, else go to right side
+
+## binary tree applications
+- searching algorithms
+- hierarchical data representations in file systems, org charts, html or xml structures
+- databases - for efficient storage and retrieval of data allowing lookup, insertion, deletion
+- balanced trees(btrees) - used in databases to maintain a balanced structure ensuring efficient performance of databases such as in database indexing. Indexng speeds up searching and sorting of records in databases.
+- filesystems - file systems are often represented as trees allowing for effiecient navigation of files and directories
+- decision trees in Machine Learning - used in classification algorithms.
+- game trees - used to model possible moves and outcomes in games like chess and tic tac toe
+- routing tables in networking - to store routing information in networking devices allowing efficient routing of data packets
+- XML/HTML DOM - to represent hierarchical structure of documents in XML and HTML. This allows efficient manipulation and traversing(navigation) of the document
+- binary heaps for priority queues - Binary heaps are a special type of binary tree to implement priority queues. It is a fundamental data structure for algorithms like Dijkstas algorithm.
+

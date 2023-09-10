@@ -24,7 +24,7 @@ func (s *Stack) Pop() int {
    return item
 }
 
-// Peek returns the top element from the stack without removing it
+// return the top element from the stack without removing it
 func (s *Stack) Peek() int {
     if len(s.items) == 0 {
         panic("Stack is empty")

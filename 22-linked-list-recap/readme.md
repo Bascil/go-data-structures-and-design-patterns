@@ -1,11 +1,15 @@
 # Linked List
-- data structure for storing a collection of items/elements
-- often compared to arrays.
+- data structure for storing a collection of items/elements, often compared to arrays.
 - data is stored on a sequence of nodes linked to each other
-- each node contains data and a pointer to the next node
+- every element in a linked list is a node. Every node has two parts
+- each node contains data and a pointer/reference to the next node/element
 - the pointer indicates the address of the next node(where the next node is)
+- the first element/node is called the head(root node)
+- the last element/node is called the tail. The tail has no reference to the next node
+- in a singly linked list, navigation is foward only
+- in a doubly linked list, navigation is in foward and boackward
 - it is faster to traverse an array than a linked list
-- to traverse a linked list, you fist need to go to the linked list and follow along
-- adding a node at the beginign of the linked list takes constant time O(1)
+- to traverse a linked list, you need to traverse the list starting from the head
+- adding a node at the begining of the linked list takes constant time O(1)
 - adding something at the begining using arrays as abit more complicated. 
 - all the values will have to shift
