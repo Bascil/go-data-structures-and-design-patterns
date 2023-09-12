@@ -1,6 +1,8 @@
 ## builder design pattern
+- this pattern separates the construction of an object from its representation
 - allows you to reuse the same algorithm to create many diffent types of objects
 - commonly described as the relationship between the director, a few builders and the product they build
+- the director oversees all the building and manages builders
 - director is incharge of vehicle(object) construction but builders are the ones that build the actual vehicle
 - the director entity in the builder pattern is a clear candidate for singleton pattern
 - the process of creating a vehicle (object) is the same for every kind of vehicle.
