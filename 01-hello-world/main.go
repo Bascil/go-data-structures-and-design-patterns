@@ -1,5 +1,4 @@
-// define main package
-package main
+package main // define main package
 
 // import dependencies
 import "fmt"
