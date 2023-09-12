@@ -1,4 +1,4 @@
-## singleton
+## singleton design pattern
 - its a creational design pattern
 - one of the most used design patterns
 - provides a single instance of an object
