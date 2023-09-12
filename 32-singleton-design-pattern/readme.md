@@ -3,7 +3,7 @@
 - one of the most used design patterns
 - provides a single instance of an object
 - guarantees no duplicate instances
-- At the first call to use the instance, you create a singleton instance and then reused in subsequent calls
+- At the first call to use the instance, you create a singleton instance and then reuse the same instance in subsequent calls
 in all the parts of the application
 - with singleton you are hiding the complexity of creating the object
 
