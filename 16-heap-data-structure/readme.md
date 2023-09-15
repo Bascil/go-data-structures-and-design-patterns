@@ -40,7 +40,7 @@
 
 ## visualization
 - heaps can be visualized as a tree but behind the scenes, the keys are stored as an array
-- each node on the tree, corresponds to an index of that array
+- each node on the tree corresponds to an index of that array
 - heaps are basically arrays that operate like a tree
 
 ```
@@ -137,8 +137,11 @@ Suppose we add a new key 63 at index 11
 - extract the highest key in a heap, 63
 - fill in the empty root with the last node 34
 
+```
 [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]
 34  16  50  14  8   48  20  9   1   5   7
+
+```
 
 - we start the swapping process starting from the top(heapify down)
 
@@ -183,15 +186,18 @@ Suppose we add a new key 63 at index 11
                             9 1 5  7  34           _|_
 
 ```
-- we can express insert and extract as O(h) where h is the height of the tree
+- we can express insert and extract as O(h), where h is the height of the tree
 - if you want to express the time complexity with n, the size of the array, we can replace h with log of n
 - the height ans the number of indices have a logarithmic relation
 - the time complexity of inserting and extracting from a heap would be O(log n)
 
 ## solution 
+```
 struct MaxHeap
 methods -Insert, Extract, maxHeapifyUp, maxHeapifyDown, swap
 functions - parent, left, right
+
+```
 
 
 
