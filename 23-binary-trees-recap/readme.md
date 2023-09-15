@@ -93,7 +93,7 @@ Each node in a B-Tree can contain multiple keys, which allows the tree to have a
 
 Unlike other self-balancing binary search trees, the B-tree is well suited for storage systems that read and write relatively large blocks of data, such as databases and file systems.
 
-![More On Btrees](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
+[More](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
 
 
 
