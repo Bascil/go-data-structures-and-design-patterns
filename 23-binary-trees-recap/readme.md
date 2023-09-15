@@ -84,3 +84,20 @@
 - XML/HTML DOM - to represent hierarchical structure of documents in XML and HTML. This allows efficient manipulation and traversing(navigation) of the document
 - binary heaps for priority queues - Binary heaps are a special type of binary tree to implement priority queues. It is a fundamental data structure for algorithms like Dijkstas algorithm.
 
+## btrees
+A B-tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. The B-tree generalizes the binary search tree, allowing for nodes with more than two children.[2] 
+
+![B-trees](btree.png)
+
+Each node in a B-Tree can contain multiple keys, which allows the tree to have a larger branching factor and thus a shallower height. This shallow height leads to less disk I/O, which results in faster search and insertion operations. B-Trees are particularly well suited for storage systems that have slow, bulky data access such as hard drives, flash memory, and CD-ROMs.
+
+Unlike other self-balancing binary search trees, the B-tree is well suited for storage systems that read and write relatively large blocks of data, such as databases and file systems.
+
+![More On Btrees](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
+
+
+
+
+
+
+
