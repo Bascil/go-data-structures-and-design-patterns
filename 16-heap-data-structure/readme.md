@@ -1,7 +1,9 @@
 # heap data structure
-- Are an interesting data structure
+=====================
 - Originally introduced as part of an algorithm called heap sort
-- Used in implementing priority queues - to take out/extract an item with the highest priority
+- The heap data structure is a type of binary tree that is commonly used in  sorting, searching, and organizing data.
+- A binary heap has nodes having at most two children
+- There are two types of Heaps ie _max heap_ and _min heap_
 
 ```
                                  50
@@ -13,9 +15,6 @@
                            9  1 5  7
 
 ```
-- All the levels in the tree are full except for the lowest levels (leaf nodes)
-- A binary heap has nodes having at most two children
-
 ## max heap
 - For a max heap the largest key will be stored in the root node
 - Every parent will have a higher key than it s children
@@ -37,6 +36,15 @@
                            16 50 34  48
 
 ```
+
+## applications
+* Priority Queue: One of the primary uses of the heap data structure is for implementing priority queues. 
+
+* Heap Sort: The heap data structure is also used in sorting algorithms.  
+Memory Management: The heap data structure is also used in memory management. When a program needs to allocate memory dynamically, it uses the heap data structure to keep track of the available memory. 
+
+* Graph Algorithms: The heap data structure is used in various graph algorithms. For example, Dijkstra's shortest path algorithm uses a heap data structure to keep track of the vertices with the shortest path from the source vertex. 
+
 
 ## visualization
 - heaps can be visualized as a tree but behind the scenes, the keys are stored as an array
@@ -81,8 +89,16 @@ Parent Index            Left Child Index
   Parent Index =  [index] - 1 / 2
 
 ## Inserting keys in a heap
+
+### construction algorithm
+Step 1 − Create a new node at the end of heap.
+Step 2 − Assign new value to the node.
+Step 3 − Compare the value of this child node with its parent.
+Step 4 − If value of parent is less than child, then swap them.
+Step 5 − Repeat step 3 & 4 until Heap property holds.
+
 ### Insert and heapify
-- Whever we perform an insert, we add a new key to the bottom right of the tree
+- Whever we perform an *insert*, we add a new key to the _bottom right_ of the tree
 - The bottom right node will be the last index
 
 ```
@@ -101,7 +117,7 @@ Suppose we add a new key 63 at index 11
 - We need to rearrage the nodes(heapify) so that we can maintain the heap property
 - We need to keep the parent larger than its children
 - We compare the new node having 63 to its parent node having 34
-- If the new node is higher (63 > 34), we swap it
+- If the new node is higher (63 > 34), we *swap* it
 - We follow up the tree and keep on repeating the process until it gets to its place
 
 ```
@@ -132,7 +148,6 @@ Suppose we add a new key 63 at index 11
                             9 1 5  7  34
 
 ```
-
 ### extraction process
 - extract the highest key in a heap, 63
 - fill in the empty root with the last node 34
@@ -186,15 +201,16 @@ Suppose we add a new key 63 at index 11
                             9 1 5  7  34           _|_
 
 ```
-- we can express insert and extract as O(h), where h is the height of the tree
-- if you want to express the time complexity with n, the size of the array, we can replace h with log of n
+- we can express insert and extract as **O(h)**, where h is the *height* of the tree
+- if you want to express the time complexity with n, the size of the array, we can replace `h` with `log of n`
 - the height ans the number of indices have a logarithmic relation
 - the time complexity of inserting and extracting from a heap would be O(log n)
 
-## solution 
+## solution in Go
+
 ```
 struct MaxHeap
-methods -Insert, Extract, maxHeapifyUp, maxHeapifyDown, swap
+methods - Insert, Extract, maxHeapifyUp, maxHeapifyDown, swap
 functions - parent, left, right
 
 ```
