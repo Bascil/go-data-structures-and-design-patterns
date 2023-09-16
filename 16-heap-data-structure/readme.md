@@ -1,5 +1,5 @@
 # heap data structure
-=====================
+
 - Originally introduced as part of an algorithm called heap sort
 - The heap data structure is a type of binary tree that is commonly used in  sorting, searching, and organizing data.
 - A binary heap has nodes having at most two children
