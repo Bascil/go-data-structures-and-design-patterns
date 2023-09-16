@@ -38,7 +38,7 @@
 ```
 
 ## applications
-* Priority Queue: One of the primary uses of the heap data structure is for implementing priority queues. 
+* Priority Queues: One of the primary uses of the heap data structure is for implementing priority queues. 
 
 * Heap Sort: The heap data structure is also used in sorting algorithms.  
 Memory Management: The heap data structure is also used in memory management. When a program needs to allocate memory dynamically, it uses the heap data structure to keep track of the available memory. 
@@ -91,11 +91,11 @@ Parent Index            Left Child Index
 ## Inserting keys in a heap
 
 ### construction algorithm
-Step 1 − Create a new node at the end of heap.
-Step 2 − Assign new value to the node.
-Step 3 − Compare the value of this child node with its parent.
-Step 4 − If value of parent is less than child, then swap them.
-Step 5 − Repeat step 3 & 4 until Heap property holds.
+* Create a new node at the end of heap.
+* Assign new value to the node.
+* Compare the value of this child node with its parent.
+* If value of parent is less than child, then swap them.
+* Repeat step 3 & 4 until Heap property holds.
 
 ### Insert and heapify
 - Whever we perform an *insert*, we add a new key to the _bottom right_ of the tree
